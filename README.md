@@ -2,6 +2,8 @@
 
 [![appstore](https://img.shields.io/badge/필름카페-다운로드-000000.svg?style=for-the-badge)](https://apps.apple.com/kr/app/id6741321900)
 
+[![Instagram](https://img.shields.io/badge/💬_앱_사용_피드백_남기기-ffcc00?style=for-the-badge&logoColor=white)]([https://bit.ly/3JyMWMi](https://j-sung-0o0.notion.site/18d9ccab637880a0ae0ff45fd2703d19?pvs=105))
+
 # lichtspiel-ios
 
 | Example1 | Example2 |
