@@ -1,8 +1,12 @@
+<img width="135" height="135" alt="IMG_7574" src="https://github.com/user-attachments/assets/65d3cc1b-fc61-4602-8123-11cb9e4d4b06" />
+
+[![appstore](https://img.shields.io/badge/필름카페-다운로드-000000.svg?style=for-the-badge)](https://apps.apple.com/kr/app/id6741321900)
+
 # lichtspiel-ios
 
 | Example1 | Example2 |
 | --- | --- |
-| <img height="360" alt="IMG_7574" src="https://github.com/user-attachments/assets/b11e250e-5c3c-4bd0-a9a4-4452a4fd88b7" /> | <img height="360" alt="IMG_7574" src="https://github.com/user-attachments/assets/94147c82-a966-4e7c-903e-15b240b14134" /> |
+| <img width="360" alt="IMG_7574" src="https://github.com/user-attachments/assets/b11e250e-5c3c-4bd0-a9a4-4452a4fd88b7" /> | <img width="360" alt="IMG_7574" src="https://github.com/user-attachments/assets/94147c82-a966-4e7c-903e-15b240b14134" /> |
 
 | Original | Filter Applied |
 | --- | --- | 
