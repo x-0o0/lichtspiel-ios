@@ -11,7 +11,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         #if DEBUG
-        DashboardView()
+        NavigationStack {
+            DashboardView()
+        }
         #else
         LichtSpielCameraView()
         #endif
