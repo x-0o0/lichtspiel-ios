@@ -17,9 +17,12 @@
 ## Features
 
 - [x] Capturing Photo
-- [x] Custom Core Image Filter (inspired by Voitgländer Vito B)
+- [x] Custom Core Image Filter (inspired by Voigtländer Vito B)
 - [x] Photo Location
 - [x] Saving Photos to System Library
+- [x] Sharing Photo
+- [x] Control Center Widget (opening app)
+- [x] Localization (English, Deutsch, 日本語; 中文即将推出)
 
 ## Architecture
 
