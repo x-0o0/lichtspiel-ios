@@ -1,0 +1,97 @@
+{
+  "sourceLanguage" : "ko",
+  "strings" : {
+    "FilmCafé Capture Intent" : {
+
+    },
+    "카메라 열기" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kamera öffnen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open Camera"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カメラを開く"
+          }
+        }
+      }
+    },
+    "필름카페 앱으로 사진을 촬영합니다." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foto mit der FilmCafé"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Take a photo with the FilmCafe."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フィルムカフェで写真を撮影します"
+          }
+        }
+      }
+    },
+    "필름카페 카메라 열기" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FilmCafé Kamera öffnen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open FilmCafe Camera"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フィルムカフェのカメラを開く"
+          }
+        }
+      }
+    },
+    "필름카페 카메라를 실행합니다." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FilmCafé Kamera starten."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Launch FilmCafe Camera"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フィルムカフェのカメラを起動します."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

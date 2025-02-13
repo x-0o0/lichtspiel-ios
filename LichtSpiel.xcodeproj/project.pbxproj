@@ -7,14 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA61FA5E2D50F747007288FC /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA61FA5D2D50F747007288FC /* WidgetKit.framework */; };
+		CA61FA602D50F747007288FC /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA61FA5F2D50F747007288FC /* SwiftUI.framework */; };
+		CA61FA6B2D50F748007288FC /* LichtSpielWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CA61FA5C2D50F747007288FC /* LichtSpielWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CA7916652D491D97004DC457 /* LichtSpielPackage in Frameworks */ = {isa = PBXBuildFile; productRef = CA7916642D491D97004DC457 /* LichtSpielPackage */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CA61FA692D50F748007288FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA79145B2D480129004DC457 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA61FA5B2D50F747007288FC;
+			remoteInfo = LichtSpielWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA52AD392D50BC1800BB54BF /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA61FA702D50F748007288FC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CA61FA6B2D50F748007288FC /* LichtSpielWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		CA61FA5C2D50F747007288FC /* LichtSpielWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LichtSpielWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA61FA5D2D50F747007288FC /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		CA61FA5F2D50F747007288FC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		CA7914632D480129004DC457 /* LichtSpiel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LichtSpiel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CA61FA6F2D50F748007288FC /* Exceptions for "LichtSpielWidget" folder in "LichtSpielWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CA61FA5B2D50F747007288FC /* LichtSpielWidgetExtension */;
+		};
+		CA61FA732D50F7CB007288FC /* Exceptions for "LichtSpiel" folder in "LichtSpielWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Intents/LichtSpielCaptureIntent.swift,
+			);
+			target = CA61FA5B2D50F747007288FC /* LichtSpielWidgetExtension */;
+		};
 		CA6DE9AC2D4CE9D100E3E186 /* Exceptions for "LichtSpiel" folder in "LichtSpiel" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -32,10 +86,19 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		CA61FA612D50F747007288FC /* LichtSpielWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CA61FA6F2D50F748007288FC /* Exceptions for "LichtSpielWidget" folder in "LichtSpielWidgetExtension" target */,
+			);
+			path = LichtSpielWidget;
+			sourceTree = "<group>";
+		};
 		CA7914652D480129004DC457 /* LichtSpiel */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				CA6DE9AC2D4CE9D100E3E186 /* Exceptions for "LichtSpiel" folder in "LichtSpiel" target */,
+				CA61FA732D50F7CB007288FC /* Exceptions for "LichtSpiel" folder in "LichtSpielWidgetExtension" target */,
 			);
 			path = LichtSpiel;
 			sourceTree = "<group>";
@@ -51,6 +114,15 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CA61FA592D50F747007288FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA61FA602D50F747007288FC /* SwiftUI.framework in Frameworks */,
+				CA61FA5E2D50F747007288FC /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA7914602D480129004DC457 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -67,6 +139,7 @@
 			children = (
 				CA7916562D491D80004DC457 /* Packages */,
 				CA7914652D480129004DC457 /* LichtSpiel */,
+				CA61FA612D50F747007288FC /* LichtSpielWidget */,
 				CA7916632D491D97004DC457 /* Frameworks */,
 				CA7914642D480129004DC457 /* Products */,
 			);
@@ -76,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				CA7914632D480129004DC457 /* LichtSpiel.app */,
+				CA61FA5C2D50F747007288FC /* LichtSpielWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +157,8 @@
 		CA7916632D491D97004DC457 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CA61FA5D2D50F747007288FC /* WidgetKit.framework */,
+				CA61FA5F2D50F747007288FC /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -90,6 +166,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CA61FA5B2D50F747007288FC /* LichtSpielWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA61FA6C2D50F748007288FC /* Build configuration list for PBXNativeTarget "LichtSpielWidgetExtension" */;
+			buildPhases = (
+				CA61FA582D50F747007288FC /* Sources */,
+				CA61FA592D50F747007288FC /* Frameworks */,
+				CA61FA5A2D50F747007288FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CA61FA612D50F747007288FC /* LichtSpielWidget */,
+			);
+			name = LichtSpielWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = LichtSpielWidgetExtension;
+			productReference = CA61FA5C2D50F747007288FC /* LichtSpielWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		CA7914622D480129004DC457 /* LichtSpiel */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA7914712D48012A004DC457 /* Build configuration list for PBXNativeTarget "LichtSpiel" */;
@@ -97,10 +195,13 @@
 				CA79145F2D480129004DC457 /* Sources */,
 				CA7914602D480129004DC457 /* Frameworks */,
 				CA7914612D480129004DC457 /* Resources */,
+				CA52AD392D50BC1800BB54BF /* Embed ExtensionKit Extensions */,
+				CA61FA702D50F748007288FC /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CA61FA6A2D50F748007288FC /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				CA7914652D480129004DC457 /* LichtSpiel */,
@@ -125,6 +226,9 @@
 				LastUpgradeCheck = 1610;
 				ORGANIZATIONNAME = "x-0o0";
 				TargetAttributes = {
+					CA61FA5B2D50F747007288FC = {
+						CreatedOnToolsVersion = 16.1;
+					};
 					CA7914622D480129004DC457 = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -136,6 +240,9 @@
 			knownRegions = (
 				Base,
 				ko,
+				ja,
+				en,
+				de,
 			);
 			mainGroup = CA79145A2D480129004DC457;
 			minimizedProjectReferenceProxies = 1;
@@ -145,11 +252,19 @@
 			projectRoot = "";
 			targets = (
 				CA7914622D480129004DC457 /* LichtSpiel */,
+				CA61FA5B2D50F747007288FC /* LichtSpielWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CA61FA5A2D50F747007288FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA7914612D480129004DC457 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,6 +275,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CA61FA582D50F747007288FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA79145F2D480129004DC457 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -169,7 +291,71 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CA61FA6A2D50F748007288FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA61FA5B2D50F747007288FC /* LichtSpielWidgetExtension */;
+			targetProxy = CA61FA692D50F748007288FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		CA61FA6D2D50F748007288FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 202502051900;
+				DEVELOPMENT_TEAM = 77CD4KLN3Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LichtSpielWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LichtSpielWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025 x-0o0. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lichtspiel.filmcafe.app.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA61FA6E2D50F748007288FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 202502051900;
+				DEVELOPMENT_TEAM = 77CD4KLN3Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LichtSpielWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LichtSpielWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025 x-0o0. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lichtspiel.filmcafe.app.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		CA79146F2D48012A004DC457 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -229,6 +415,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -285,6 +472,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -295,7 +483,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 202502030510;
+				CURRENT_PROJECT_VERSION = 202502051900;
 				DEVELOPMENT_ASSET_PATHS = "\"LichtSpiel/Preview Content\"";
 				DEVELOPMENT_TEAM = 77CD4KLN3Y;
 				ENABLE_PREVIEWS = YES;
@@ -315,7 +503,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lichtspiel.filmcafe.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -332,7 +520,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 202502030510;
+				CURRENT_PROJECT_VERSION = 202502051900;
 				DEVELOPMENT_ASSET_PATHS = "\"LichtSpiel/Preview Content\"";
 				DEVELOPMENT_TEAM = 77CD4KLN3Y;
 				ENABLE_PREVIEWS = YES;
@@ -352,7 +540,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lichtspiel.filmcafe.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -366,6 +554,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CA61FA6C2D50F748007288FC /* Build configuration list for PBXNativeTarget "LichtSpielWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA61FA6D2D50F748007288FC /* Debug */,
+				CA61FA6E2D50F748007288FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CA79145E2D480129004DC457 /* Build configuration list for PBXProject "LichtSpiel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
