@@ -1,4 +1,6 @@
-<img width="135" height="135" alt="IMG_7574" src="https://github.com/user-attachments/assets/ec784047-231f-4f6c-a3e7-e30198d308cd" />
+<img width="135" height="135" alt="IMG_7574" src="https://github.com/user-attachments/assets/adcad4f1-2fd8-4af3-b320-0f46fded0a90" />
+
+
 
 [![appstore](https://img.shields.io/badge/필름카페-다운로드-000000.svg?style=for-the-badge)](https://apps.apple.com/kr/app/id6741321900)
 
